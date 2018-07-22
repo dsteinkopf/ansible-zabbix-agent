@@ -84,13 +84,14 @@ zabbix_agent_loadmodulepath: ${libdir}/modules
 zabbix_agent_loadmodule:
 
 # TLS settings
-zabbix_agent_tlsconnect:
-zabbix_agent_tlsaccept:
+#zabbix_agent_tlsconnect:
+#zabbix_agent_tlsaccept:
 zabbix_agent_tlscafile:
 zabbix_agent_tlscrlfile:
 zabbix_agent_tlsservercertissuer:
 zabbix_agent_tlsservercertsubject:
 zabbix_agent_tlscertfile:
 zabbix_agent_tlskeyfile:
-zabbix_agent_tlspskidentity:
-zabbix_agent_tlspskfile: ''
+#zabbix_agent_tlspskidentity:
+#zabbix_agent_tlspsk_secret
+#zabbix_agent_tlspskfile: ''

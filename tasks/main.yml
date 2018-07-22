@@ -224,6 +224,10 @@
     inventory_mode: "{{ zabbix_inventory_mode }}"
     interfaces: "{{ zabbix_agent_interfaces }}"
     visible_name: "{{ zabbix_visible_hostname|default(zabbix_agent_hostname) }}"
+    tls_accept: "{{ encryption_types[zabbix_agent_tlsconnect|default('unencrypted')] }}"
+    tls_connect: "{{ encryption_types[zabbix_agent_tlsaccept|default('unencrypted')] }}"
+    tls_psk_identity: "{{ zabbix_agent_tlspskidentity|default('') }}"
+    tls_psk: "{{ zabbix_agent_tlspsk_secret|default('') }}"
   when:
     - zabbix_api_create_hosts
   become: no

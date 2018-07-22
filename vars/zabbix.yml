@@ -1,5 +1,10 @@
 ---
 
+encryption_types:
+  unencrypted: 1
+  psk:         2
+  cert:        4
+
 sign_keys:
   "34":
     bionic:
